@@ -11,6 +11,9 @@ console.log (inputEl);
 
 inputEl.addEventListener ('input', onInputCgange);
 function onInputCgange (event) {
-    spanEl.textContent = event.currentTarget.value;
+    !event.currentTarget.value
+    ? spanEl.textContent = "Anonymous"
+    : spanEl.textContent = event.currentTarget.value;
+
     console.log (event.currentTarget.value)
 }

@@ -13,7 +13,7 @@ console.log (buttonEl.addEventListener );
 
 function onButtonChangeColorClick (){
   bodyEl.style.backgroundColor = getRandomHexColor();
-  span.textContent = getRandomHexColor();
+  span.textContent = bodyEl.style.backgroundColor;
 }
 
 
